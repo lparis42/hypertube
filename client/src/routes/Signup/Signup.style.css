@@ -1,0 +1,85 @@
+.sign_up-div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.sign_up-content {
+	display: flex;
+	flex-direction: column;
+	max-width: 300px;
+	width: 100%;
+}
+
+.header-div,
+.inputs-div,
+.continue-div,
+.separator-div {
+	margin-bottom: 40px;
+}
+
+.inputs-div > div {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.input-div.error > .errors-div > ul {
+	text-align: left;
+	margin: 5px 0;
+	padding-left: 25px;
+	color: #bc0000;
+	font-size: 13px;
+	display: block;
+}
+
+.input-div.error > input {
+	border-color: #bc0000;
+}
+
+.input-div:not(.error) > .errors-div {
+	display: none;
+}
+
+.input-div:not(.error) > input {
+	border-color: #213548;
+}
+
+.inputs-div > div:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.inputs-div > div > input {
+	background-color: #fff;
+	border: 1px #213548 solid;
+	border-radius: 26px;
+	width: 100%;
+	padding: 10px 20px;
+	height: 45px;
+	box-sizing: border-box;
+	outline: none;
+}
+
+.continue {
+	width: 100%;
+	height: 45px;
+}
+
+.separator-div {
+	display: flex;
+	opacity: 0.5;
+}
+
+.separator-div > div {
+	height: 1px;
+	width: 100%;
+	background: #000;
+	margin: auto 0;
+}
+
+.separator-div > span {
+	margin: 0 10px;
+  margin-bottom: 4px;
+}

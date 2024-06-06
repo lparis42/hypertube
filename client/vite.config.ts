@@ -1,9 +1,15 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
+import svgrPlugin from "vite-plugin-svgr";
+import viteTsconfigPaths from "vite-tsconfig-paths";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+		react(),
+		viteTsconfigPaths(),
+    svgrPlugin(),
+	],
   // For development purposes
   server: {
     proxy: {

@@ -1,0 +1,23 @@
+.menu_layout-button {
+	text-align: left;
+	font-size: 16px;
+	padding: 10px 12px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.menu_layout-button.active {
+	cursor: default;
+	pointer-events: none;
+}
+
+.menu_layout-button:hover,
+.menu_layout-button.active {
+	background-color: #ececec;
+}
+
+@media (max-width: 600px) {
+	.menu_layout-button {
+		font-size: 1rem;
+	}
+}

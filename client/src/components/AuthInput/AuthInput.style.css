@@ -1,0 +1,19 @@
+.input-div {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.input-div.error > .errors-div > ul {
+	text-align: left;
+	margin: 5px 0;
+	padding-left: 25px;
+	color: #bc0000;
+	font-size: 13px;
+	display: block;
+}
+
+.input-div.error > input {
+	border-color: #bc0000;
+}
