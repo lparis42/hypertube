@@ -62,9 +62,8 @@ const constant = {
         `date_of_birth DATE CHECK (date_of_birth BETWEEN '1900-01-01' AND '2021-12-31')`,
         `gender VARCHAR(35) CHECK (gender IN ('Male', 'Female', 'Other'))`,
         `biography VARCHAR(255)`,
-        `pictures VARCHAR(255)[5] DEFAULT ARRAY[]::VARCHAR(255)[]`,
-        `geolocation VARCHAR[2]`,
-        `localization VARCHAR(255)`,
+        `pictures VARCHAR(255) DEFAULT '[]'`,
+        `localization VARCHAR(255) DEFAULT '[]'`,
         `last_connection TIMESTAMP`,
 
         `created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP`,
