@@ -27,7 +27,7 @@ export default function MenuLayout({ menu, setMenu }: IMenuLayout) {
 					<div className='menu_layout-body'>
 						<Button to='/' value='Home' />
 						<Button to='/profile' value='Profile' />
-						<Button to='/messages' value='Messages' />
+						<Button to='/library' value='Library' />
 						<button onClick={logout} className='no-select'>
 							Logout
 						</button>

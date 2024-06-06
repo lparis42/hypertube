@@ -7,8 +7,10 @@ import { SessionProvider } from '@/providers/session/session-provider';
 import App from './App';
 
 import Home from '@/routes/Home/Home';
-import Signin from './routes/Signin/Signin';
-import Signup from './routes/Signup/Signup';
+import Signin from '@/routes/Signin/Signin';
+import Signup from '@/routes/Signup/Signup';
+import Profile from '@/routes/Profile/Profile';
+import Library from '@/routes/Library/Library';
 
 import './index.css';
 
@@ -20,6 +22,14 @@ const router = createBrowserRouter([
 			{
 				path: '/',
 				element: <Home />,
+			},
+			{
+				path: '/profile',
+				element: <Profile />,
+			},
+			{
+				path: '/library',
+				element: <Library />,
 			},
 			{
 				path: '/signin',
